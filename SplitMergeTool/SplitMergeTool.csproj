@@ -1,0 +1,319 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{03CAC018-4875-49B6-9FA2-E15846EA453A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>SplitMergeTool</RootNamespace>
+    <AssemblyName>SplitMergeTool V1.0.0</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Spire.Barcode, Version=2.3.0.16040, Culture=neutral, PublicKeyToken=663f351905198cb3, processorArchitecture=MSIL">
+      <HintPath>packages\FreeSpire.Office.3.0\lib\net40\Spire.Barcode.dll</HintPath>
+    </Reference>
+    <Reference Include="Spire.DataExport, Version=3.5.131.4040, Culture=neutral, PublicKeyToken=663f351905198cb3, processorArchitecture=MSIL">
+      <HintPath>packages\FreeSpire.Office.3.0\lib\net40\Spire.DataExport.dll</HintPath>
+    </Reference>
+    <Reference Include="Spire.DataExport.ResourceMgr, Version=1.6.71.4040, Culture=neutral, PublicKeyToken=4bc1500157862925, processorArchitecture=MSIL">
+      <HintPath>packages\FreeSpire.Office.3.0\lib\net40\Spire.DataExport.ResourceMgr.dll</HintPath>
+    </Reference>
+    <Reference Include="Spire.Doc, Version=6.5.6.4040, Culture=neutral, PublicKeyToken=663f351905198cb3, processorArchitecture=MSIL">
+      <HintPath>packages\FreeSpire.Office.3.0\lib\net40\Spire.Doc.dll</HintPath>
+    </Reference>
+    <Reference Include="Spire.DocViewer.Forms, Version=3.4.1.14040, Culture=neutral, PublicKeyToken=663f351905198cb3, processorArchitecture=MSIL">
+      <HintPath>packages\FreeSpire.Office.3.0\lib\net40\Spire.DocViewer.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="Spire.License, Version=1.3.6.40, Culture=neutral, PublicKeyToken=b1144360237c8b3f, processorArchitecture=MSIL">
+      <HintPath>packages\FreeSpire.Office.3.0\lib\net40\Spire.License.dll</HintPath>
+    </Reference>
+    <Reference Include="Spire.Pdf, Version=4.5.1.2040, Culture=neutral, PublicKeyToken=663f351905198cb3, processorArchitecture=MSIL">
+      <HintPath>packages\FreeSpire.Office.3.0\lib\net40\Spire.Pdf.dll</HintPath>
+    </Reference>
+    <Reference Include="Spire.PdfViewer.Forms, Version=3.4.1.14340, Culture=neutral, PublicKeyToken=663f351905198cb3, processorArchitecture=MSIL">
+      <HintPath>packages\FreeSpire.Office.3.0\lib\net40\Spire.PdfViewer.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="Spire.Presentation, Version=3.5.1.9040, Culture=neutral, PublicKeyToken=663f351905198cb3, processorArchitecture=MSIL">
+      <HintPath>packages\FreeSpire.Office.3.0\lib\net40\Spire.Presentation.dll</HintPath>
+    </Reference>
+    <Reference Include="Spire.XLS, Version=8.5.0.6040, Culture=neutral, PublicKeyToken=663f351905198cb3, processorArchitecture=MSIL">
+      <HintPath>packages\FreeSpire.Office.3.0\lib\net40\Spire.XLS.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ChangeLanguage.cs" />
+    <Compile Include="Common.cs" />
+    <Compile Include="DocumentManage\DocMergeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DocumentManage\DocMergeForm.Designer.cs">
+      <DependentUpon>DocMergeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DocumentManage\DocSplitForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DocumentManage\DocSplitForm.Designer.cs">
+      <DependentUpon>DocSplitForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NoteBookManage\NoteMergeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NoteBookManage\NoteMergeForm.Designer.cs">
+      <DependentUpon>NoteMergeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SheetManage\SheetMergeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SheetManage\SheetMergeForm.Designer.cs">
+      <DependentUpon>SheetMergeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SheetManage\SheetSplitForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SheetManage\SheetSplitForm.Designer.cs">
+      <DependentUpon>SheetSplitForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemManage\AboutForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemManage\AboutForm.Designer.cs">
+      <DependentUpon>AboutForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FileManagementTool.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FileManagementTool.Designer.cs">
+      <DependentUpon>FileManagementTool.cs</DependentUpon>
+    </Compile>
+    <Compile Include="lang\en-us.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>en-us.resx</DependentUpon>
+    </Compile>
+    <Compile Include="SystemManage\ContactForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemManage\ContactForm.Designer.cs">
+      <DependentUpon>ContactForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemManage\HelpForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemManage\HelpForm.Designer.cs">
+      <DependentUpon>HelpForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ToolEntityObject.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ShowMessage.cs" />
+    <Compile Include="NoteBookManage\NoteSplitForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NoteBookManage\NoteSplitForm.Designer.cs">
+      <DependentUpon>NoteSplitForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="lang\zh-cn.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>zh-cn.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ToolManage\FileFormatConversionToolForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ToolManage\FileFormatConversionToolForm.Designer.cs">
+      <DependentUpon>FileFormatConversionToolForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ToolManage\SimpleCalculatorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ToolManage\SimpleCalculatorForm.Designer.cs">
+      <DependentUpon>SimpleCalculatorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ToolManage\TranslationToolForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ToolManage\TranslationToolForm.Designer.cs">
+      <DependentUpon>TranslationToolForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="DocumentManage\DocMergeForm.resx">
+      <DependentUpon>DocMergeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DocumentManage\DocSplitForm.resx">
+      <DependentUpon>DocSplitForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NoteBookManage\NoteMergeForm.resx">
+      <DependentUpon>NoteMergeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SheetManage\SheetMergeForm.resx">
+      <DependentUpon>SheetMergeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SheetManage\SheetSplitForm.resx">
+      <DependentUpon>SheetSplitForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemManage\AboutForm.resx">
+      <DependentUpon>AboutForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FileManagementTool.resx">
+      <DependentUpon>FileManagementTool.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.ssy-ER.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="lang\en-us.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>en-us.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemManage\ContactForm.resx">
+      <DependentUpon>ContactForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemManage\HelpForm.resx">
+      <DependentUpon>HelpForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NoteBookManage\NoteSplitForm.resx">
+      <DependentUpon>NoteSplitForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="lang\zh-cn.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>zh-cn.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ToolManage\FileFormatConversionToolForm.resx">
+      <DependentUpon>FileFormatConversionToolForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ToolManage\SimpleCalculatorForm.resx">
+      <DependentUpon>SimpleCalculatorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ToolManage\TranslationToolForm.resx">
+      <DependentUpon>TranslationToolForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="images\menuImgs\about.png" />
+    <Content Include="images\menuImgs\chinese.png" />
+    <Content Include="images\menuImgs\contact.png" />
+    <Content Include="images\menuImgs\document.png" />
+    <Content Include="images\menuImgs\english.png" />
+    <Content Include="images\menuImgs\help.png" />
+    <Content Include="images\menuImgs\language.png" />
+    <Content Include="images\menuImgs\merge.png" />
+    <Content Include="images\menuImgs\notebook.png" />
+    <Content Include="images\menuImgs\out.png" />
+    <Content Include="images\menuImgs\spearate.png" />
+    <Content Include="images\menuImgs\system.png" />
+    <Content Include="images\menuImgs\table.png" />
+    <Content Include="images\menuImgs\tool.png" />
+    <Content Include="images\tools.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Word">
+      <Guid>{00020905-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>8</VersionMajor>
+      <VersionMinor>7</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="MSScriptControl">
+      <Guid>{0E59F1D2-1FBE-11D0-8FF2-00A0D10038BC}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

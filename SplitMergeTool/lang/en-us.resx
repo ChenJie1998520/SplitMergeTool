@@ -1,0 +1,522 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="About" xml:space="preserve">
+    <value>About</value>
+  </data>
+  <data name="Add" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="AddFileToMerge" xml:space="preserve">
+    <value>Please add the files needed for the merge first!</value>
+  </data>
+  <data name="Browse" xml:space="preserve">
+    <value>Browse</value>
+  </data>
+  <data name="Chinese" xml:space="preserve">
+    <value>Chinese</value>
+  </data>
+  <data name="Clear" xml:space="preserve">
+    <value>Clear</value>
+  </data>
+  <data name="ConfirmExecution" xml:space="preserve">
+    <value>This operation will delete the original file with the same name in the output file path, confirm the execution?</value>
+  </data>
+  <data name="Contact" xml:space="preserve">
+    <value>Contact</value>
+  </data>
+  <data name="CurrDate" xml:space="preserve">
+    <value>Current time</value>
+  </data>
+  <data name="DocManage" xml:space="preserve">
+    <value>Document Manage</value>
+  </data>
+  <data name="DocMerge" xml:space="preserve">
+    <value>Document Merge</value>
+  </data>
+  <data name="DocSplit" xml:space="preserve">
+    <value>Document Split</value>
+  </data>
+  <data name="DropOut" xml:space="preserve">
+    <value>Drop Out</value>
+  </data>
+  <data name="English" xml:space="preserve">
+    <value>English</value>
+  </data>
+  <data name="EnterFileName" xml:space="preserve">
+    <value>Please enter a file name!</value>
+  </data>
+  <data name="ExecutionCompleted" xml:space="preserve">
+    <value>Execution completed!</value>
+  </data>
+  <data name="FileList" xml:space="preserve">
+    <value>File list</value>
+  </data>
+  <data name="FileManageTool" xml:space="preserve">
+    <value>Split Merge Tool</value>
+  </data>
+  <data name="FileName" xml:space="preserve">
+    <value>File name</value>
+  </data>
+  <data name="FilePath" xml:space="preserve">
+    <value>File path</value>
+  </data>
+  <data name="FilePathError" xml:space="preserve">
+    <value>File path error!</value>
+  </data>
+  <data name="FileSize" xml:space="preserve">
+    <value>File size(Byte)</value>
+  </data>
+  <data name="FilesMerged" xml:space="preserve">
+    <value>Merge files (for file drag and drop)</value>
+  </data>
+  <data name="FileType" xml:space="preserve">
+    <value>File type</value>
+  </data>
+  <data name="FirstItemCannotMove" xml:space="preserve">
+    <value>Already the first item, can't move!</value>
+  </data>
+  <data name="FormManage" xml:space="preserve">
+    <value>Form Manage</value>
+  </data>
+  <data name="FormMerge" xml:space="preserve">
+    <value>Form Merge</value>
+  </data>
+  <data name="FormSplit" xml:space="preserve">
+    <value>Form Split</value>
+  </data>
+  <data name="Help" xml:space="preserve">
+    <value>Help</value>
+  </data>
+  <data name="Home" xml:space="preserve">
+    <value>Home</value>
+  </data>
+  <data name="Language" xml:space="preserve">
+    <value>Language</value>
+  </data>
+  <data name="LastItemCannotMove" xml:space="preserve">
+    <value>Already the last item, can't move!</value>
+  </data>
+  <data name="Merge" xml:space="preserve">
+    <value>Merge</value>
+  </data>
+  <data name="MergeFileSizeLimit" xml:space="preserve">
+    <value>The combined file size is up to 20GB (ie 21474836480Byte or 20971520Kb or 20480MB)</value>
+  </data>
+  <data name="MoveDown" xml:space="preserve">
+    <value>Move down</value>
+  </data>
+  <data name="MoveUp" xml:space="preserve">
+    <value>Move up</value>
+  </data>
+  <data name="NoteBookManage" xml:space="preserve">
+    <value>Notepad Manage</value>
+  </data>
+  <data name="NoteMerge" xml:space="preserve">
+    <value>NoteBook Merge</value>
+  </data>
+  <data name="NoteSplit" xml:space="preserve">
+    <value>NoteBook Split</value>
+  </data>
+  <data name="Operating" xml:space="preserve">
+    <value>Operating</value>
+  </data>
+  <data name="Remove" xml:space="preserve">
+    <value>Remove</value>
+  </data>
+  <data name="SelectFileSavePath" xml:space="preserve">
+    <value>Please select a file save path!</value>
+  </data>
+  <data name="SelectItemToMove" xml:space="preserve">
+    <value>Please select items to move!</value>
+  </data>
+  <data name="SelectItemToRemove" xml:space="preserve">
+    <value>Please select items to remove!</value>
+  </data>
+  <data name="SystemManage" xml:space="preserve">
+    <value>System Manage</value>
+  </data>
+  <data name="BasicInformation" xml:space="preserve">
+    <value>Basic information</value>
+  </data>
+  <data name="EnterCustomContent" xml:space="preserve">
+    <value>Please enter custom information!</value>
+  </data>
+  <data name="EnterFileCount" xml:space="preserve">
+    <value>Please enter the number of files!</value>
+  </data>
+  <data name="EnterFileSize" xml:space="preserve">
+    <value>Please enter the file size!</value>
+  </data>
+  <data name="FileCount" xml:space="preserve">
+    <value>Number of files</value>
+  </data>
+  <data name="FileLength" xml:space="preserve">
+    <value>File length</value>
+  </data>
+  <data name="SelectFile" xml:space="preserve">
+    <value>Please select a file!</value>
+  </data>
+  <data name="Split" xml:space="preserve">
+    <value>Segmentation</value>
+  </data>
+  <data name="SplitCustomOptions" xml:space="preserve">
+    <value>Add custom content to the first line(only 50 characters, content cannot be empty)</value>
+  </data>
+  <data name="SplitFile" xml:space="preserve">
+    <value>Split file</value>
+  </data>
+  <data name="SplitMethod" xml:space="preserve">
+    <value>Split method</value>
+  </data>
+  <data name="SplitPrompt" xml:space="preserve">
+    <value>Writing data to file {0} failed!</value>
+  </data>
+  <data name="SerialNumber" xml:space="preserve">
+    <value>Number</value>
+  </data>
+  <data name="AddTextWatermark" xml:space="preserve">
+    <value>Add text watermark</value>
+  </data>
+  <data name="ChooseColor" xml:space="preserve">
+    <value>Choose color</value>
+  </data>
+  <data name="ChooseFontSize" xml:space="preserve">
+    <value>Choose font size</value>
+  </data>
+  <data name="FontSize" xml:space="preserve">
+    <value>Font size</value>
+  </data>
+  <data name="LayoutMethod" xml:space="preserve">
+    <value>Layout method</value>
+  </data>
+  <data name="PageBreakSplit" xml:space="preserve">
+    <value>Split based on page breaks</value>
+  </data>
+  <data name="SectionBreakSplit" xml:space="preserve">
+    <value>Split based on section breaks</value>
+  </data>
+  <data name="WatermarkColor" xml:space="preserve">
+    <value>Watermark color</value>
+  </data>
+  <data name="WatermarkLayoutDiagonal" xml:space="preserve">
+    <value>Diagonal</value>
+  </data>
+  <data name="WatermarkLayoutHorizontal" xml:space="preserve">
+    <value>Horizontal</value>
+  </data>
+  <data name="AddNewPageMerge" xml:space="preserve">
+    <value>Add new page merge</value>
+  </data>
+  <data name="TakeEndParagraph" xml:space="preserve">
+    <value>Merge from the end of the paragraph</value>
+  </data>
+  <data name="AllWorksheets" xml:space="preserve">
+    <value>All worksheets</value>
+  </data>
+  <data name="ChooseWorksheet" xml:space="preserve">
+    <value>Please select a worksheet</value>
+  </data>
+  <data name="DesignatedWorksheet" xml:space="preserve">
+    <value>Designated worksheet</value>
+  </data>
+  <data name="Rows" xml:space="preserve">
+    <value>Rows</value>
+  </data>
+  <data name="RowsCannotBeEmpty" xml:space="preserve">
+    <value>The number of rows cannot be empty</value>
+  </data>
+  <data name="RowsWrongFormat" xml:space="preserve">
+    <value>Format error, format requirement: positive integer (starting line number), positive integer and 0 (end line number, 0 means last line)</value>
+  </data>
+  <data name="SpecifiedWorksheetCannotBeEmpty" xml:space="preserve">
+    <value>The specified worksheet cannot be empty!</value>
+  </data>
+  <data name="SplitAllWorksheetsIntoWorkbooks" xml:space="preserve">
+    <value>Split all worksheets into workbooks</value>
+  </data>
+  <data name="SplitType" xml:space="preserve">
+    <value>Split type</value>
+  </data>
+  <data name="SplitWorksheetIntoFixedRows" xml:space="preserve">
+    <value>Split the worksheet into fixed rows</value>
+  </data>
+  <data name="WorkSheet" xml:space="preserve">
+    <value>Worksheet</value>
+  </data>
+  <data name="MultipleWorkbookMerges" xml:space="preserve">
+    <value>Multiple workbook merges</value>
+  </data>
+  <data name="MultipleWorksheetsMerges" xml:space="preserve">
+    <value>Multiple worksheets merged</value>
+  </data>
+  <data name="ContactNote" xml:space="preserve">
+    <value>Note: Please indicate "SplitMergeTool" user when contacting</value>
+  </data>
+  <data name="CopyEmailAddress" xml:space="preserve">
+    <value>The email address was copied successfully!</value>
+  </data>
+  <data name="CopyPhoneNumber" xml:space="preserve">
+    <value>Mobile phone number copied successfully!</value>
+  </data>
+  <data name="CopyQQNumber" xml:space="preserve">
+    <value>QQ number copied successfully!</value>
+  </data>
+  <data name="CopyToClipboard" xml:space="preserve">
+    <value>Copy to clipboard</value>
+  </data>
+  <data name="CopyWeChatNumber" xml:space="preserve">
+    <value>WeChat number copied successfully!</value>
+  </data>
+  <data name="ProductDescription" xml:space="preserve">
+    <value>Set up notebooks, documents, forms and other documents for management, file splitting and merging. Operating environment: Windows platform</value>
+  </data>
+  <data name="CopyRight" xml:space="preserve">
+    <value>CopyRight© 2019 Jay Chan. All Rights Reserved.</value>
+  </data>
+  <data name="ToolVersion" xml:space="preserve">
+    <value>File Management Tool 1.0.0</value>
+  </data>
+  <data name="VersionAll" xml:space="preserve">
+    <value>Jay Chan reserves all rights</value>
+  </data>
+  <data name="ExtendedArea" xml:space="preserve">
+    <value>Extended area</value>
+  </data>
+  <data name="InputField" xml:space="preserve">
+    <value>Input field</value>
+  </data>
+  <data name="SimpleCalculator" xml:space="preserve">
+    <value>Simple Calculator</value>
+  </data>
+  <data name="ToolManage" xml:space="preserve">
+    <value>Tool Manage</value>
+  </data>
+  <data name="ConversionFormatNotMatch" xml:space="preserve">
+    <value>Conversion type does not match file format!</value>
+  </data>
+  <data name="Convert" xml:space="preserve">
+    <value>Convert</value>
+  </data>
+  <data name="ConvertType" xml:space="preserve">
+    <value>Convert Type</value>
+  </data>
+  <data name="FileFormatConversionTool" xml:space="preserve">
+    <value>File Format Conversion Tool</value>
+  </data>
+  <data name="FilesConvert" xml:space="preserve">
+    <value>Convert files (for file drag and drop)</value>
+  </data>
+  <data name="FormatType0" xml:space="preserve">
+    <value>PDF to Word</value>
+  </data>
+  <data name="FormatType1" xml:space="preserve">
+    <value>PDF to XPS</value>
+  </data>
+  <data name="FormatType10" xml:space="preserve">
+    <value>PDF to BMP</value>
+  </data>
+  <data name="FormatType11" xml:space="preserve">
+    <value>PDF to GIF</value>
+  </data>
+  <data name="FormatType12" xml:space="preserve">
+    <value>PDF to ICON</value>
+  </data>
+  <data name="FormatType2" xml:space="preserve">
+    <value>PDF to Html</value>
+  </data>
+  <data name="FormatType3" xml:space="preserve">
+    <value>CSV to PDF</value>
+  </data>
+  <data name="FormatType4" xml:space="preserve">
+    <value>Word to PDF</value>
+  </data>
+  <data name="FormatType5" xml:space="preserve">
+    <value>XPS to PDF</value>
+  </data>
+  <data name="FormatType6" xml:space="preserve">
+    <value>Html to PDF</value>
+  </data>
+  <data name="FormatType7" xml:space="preserve">
+    <value>PDF to PNG</value>
+  </data>
+  <data name="FormatType8" xml:space="preserve">
+    <value>Excel to PDF</value>
+  </data>
+  <data name="FormatType9" xml:space="preserve">
+    <value>PDF to JPG</value>
+  </data>
+  <data name="InconsistentFileFormat" xml:space="preserve">
+    <value>Inconsistent file format!</value>
+  </data>
+  <data name="SelectConvertFile" xml:space="preserve">
+    <value>Please select the file that needs to be formatted!</value>
+  </data>
+  <data name="lang_1" xml:space="preserve">
+    <value>Automatic detection</value>
+  </data>
+  <data name="lang_10" xml:space="preserve">
+    <value>Thai</value>
+  </data>
+  <data name="lang_11" xml:space="preserve">
+    <value>Russian</value>
+  </data>
+  <data name="lang_12" xml:space="preserve">
+    <value>German</value>
+  </data>
+  <data name="lang_13" xml:space="preserve">
+    <value>Traditional Chinese</value>
+  </data>
+  <data name="lang_14" xml:space="preserve">
+    <value>Vietnamese</value>
+  </data>
+  <data name="lang_2" xml:space="preserve">
+    <value>Chinese</value>
+  </data>
+  <data name="lang_3" xml:space="preserve">
+    <value>English</value>
+  </data>
+  <data name="lang_4" xml:space="preserve">
+    <value>Cantonese</value>
+  </data>
+  <data name="lang_5" xml:space="preserve">
+    <value>Classical Chinese</value>
+  </data>
+  <data name="lang_6" xml:space="preserve">
+    <value>Japanese</value>
+  </data>
+  <data name="lang_7" xml:space="preserve">
+    <value>Korean</value>
+  </data>
+  <data name="lang_8" xml:space="preserve">
+    <value>French</value>
+  </data>
+  <data name="lang_9" xml:space="preserve">
+    <value>Spanish</value>
+  </data>
+  <data name="Translation" xml:space="preserve">
+    <value>Translation</value>
+  </data>
+  <data name="TranslationNote" xml:space="preserve">
+    <value>Note: Please use this translation tool if the network is unblocked.</value>
+  </data>
+  <data name="TranslationTool" xml:space="preserve">
+    <value>Translation Tool</value>
+  </data>
+</root>

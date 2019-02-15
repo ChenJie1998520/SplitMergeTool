@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.168
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SplitMergeTool", "SplitMergeTool.csproj", "{03CAC018-4875-49B6-9FA2-E15846EA453A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{03CAC018-4875-49B6-9FA2-E15846EA453A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03CAC018-4875-49B6-9FA2-E15846EA453A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03CAC018-4875-49B6-9FA2-E15846EA453A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03CAC018-4875-49B6-9FA2-E15846EA453A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {09968C1A-27A6-4304-A79C-D3FCBDE13EEF}
+	EndGlobalSection
+EndGlobal
